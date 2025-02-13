@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="images/bcm4360.png" alt="Arch Linux Logo" 
-       style=" padding: 5px; width: 600px;">
+       style=" padding: 5px; width: 500px;">
 </p>
 
 ---
