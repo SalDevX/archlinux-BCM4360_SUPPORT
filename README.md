@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="images/bcm4360.png" alt="Arch Linux Logo" 
-       style="border-radius: 15px; border: 2px solid #ccc; padding: 5px; width: 600px;">
+       style=" padding: 5px; width: 600px;">
 </p>
 
 ---
@@ -54,7 +54,7 @@ This will generate the ISO in `~/Desktop/custom-archiso/`.
 
 ### Use `dd` to flash the ISO onto a USB drive:
 ```bash
-❯ sudo dd if=~/Desktop/custom-archiso/archlinux-BCM4360_SUPPORT.iso of=/dev/sdX bs=4M status=progress && sync
+❯ sudo dd if=~/Desktop/custom-archiso/archlinux-BCM4360_SUPPORT.iso of=/dev/sdX bs=1M status=progress && sync
 ```
 
 Replace `/dev/sdX` with your actual USB device (e.g., `/dev/sdb`). Alternatively, use a tool like **balenaEtcher** for a graphical interface.
