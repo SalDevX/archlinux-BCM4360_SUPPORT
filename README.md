@@ -31,7 +31,6 @@ sudo pacman -S archiso
 
 ## **Build the Custom ISO** <img src="images/Arch_Linux__Crystal__icon.svg" width="40"  style="vertical-align: middle;"> 
 
----
 
 Execute the following command inside the repository directory:
 
@@ -48,8 +47,8 @@ This will generate the ISO in `~/Desktop/custom-archiso/`.
 
 
 
-## <b>Burn the ISO to a USB Drive</b><img src="images/usb.png" width="40" style="vertical-align: middle; margin-left: 10px;">
----
+## <b>Burn the ISO to a USB Drive</b> <img src="images/usb.png" width="40" style="vertical-align: middle; margin-left: 20px;">
+
 
 ### Use `dd` to flash the ISO onto a USB drive:
 ```bash
@@ -67,7 +66,7 @@ Replace `/dev/sdX` with your actual USB device (e.g., `/dev/sdb`). Alternatively
 
 ---
 
-## **The WiFi should work out of the** <img src="images/open-box.png" width="45"  style="vertical-align: middle;"> 
+## **The WiFi should work out of the** <img src="images/open-box.png" width="40"  style="vertical-align: sub;"> 
 
 
 
