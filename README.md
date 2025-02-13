@@ -1,10 +1,10 @@
-# Custom Arch Linux ISO with BCM4360 Support
+<h2 align="center"><strong> 🫴✨ Custom Arch Linux ISO with BCM4360 Support 🧙 </strong></h2>
 
 <p align="center">
   <img src="images/bcm4360.png" alt="Alt text">
 </p>
 
-
+---
 
 This guide provides a **step-by-step** process to create a custom Arch Linux ISO with **Broadcom BCM4360 WiFi support**.
 
@@ -12,7 +12,7 @@ GitHub Repository: [archlinux-BCM4360_SUPPORT](https://github.com/SalDevX/archli
 
 ---
 
-## ** Clone the Repository**
+## **Clone the Repository**
 Start by cloning the repository containing all necessary configurations:
 ```bash
 cd ~/Desktop
@@ -22,16 +22,18 @@ cd archlinux-BCM4360_SUPPORT
 
 ---
 
-## ** Install Required Packages**
+## **Install Required Packages**
 Ensure you have the necessary dependencies installed:
 ```bash
 sudo pacman -S archiso
 ```
-
 ---
 
-## ** Build the Custom ISO**
+## **Build the Custom ISO** <img src="images/Arch_Linux__Crystal__icon.svg" width="40"  style="vertical-align: middle;"> 
+---
+
 Execute the following command inside the repository directory:
+
 ```bash
 
 cd ~/Desktop/archlinux-BCM4360_SUPPORT
@@ -42,17 +44,20 @@ sudo mkarchiso -v -w ~/archiso-tmp -o ~/Desktop/custom-archiso .
 This will generate the ISO in `~/Desktop/custom-archiso/`.
 
 ---
+<br><br>
 
-## ** Burn the ISO to a USB Drive**
+<h2><b>Burn the ISO to a USB Drive</b></h2> <img src="image/usb.png" width="40" style="vertical-aling: middle:">
+
 Use `dd` to flash the ISO onto a USB drive:
 ```bash
 sudo dd if=~/Desktop/custom-archiso/*.iso of=/dev/sdX bs=4M status=progress && sync
 ```
+
 Replace `/dev/sdX` with your actual USB device (e.g., `/dev/sdb`). Alternatively, use a tool like **balenaEtcher** for a graphical interface.
 
 ---
 
-## ** Boot from USB**
+## **Boot from USB**
 - Insert the USB drive into your MacBook Pro 2014.
 - Restart and hold down the **Option key** to select the boot device.
 - Choose the custom **Arch Linux ISO** and proceed with installation.
@@ -74,7 +79,7 @@ systemctl restart NetworkManager
 
 ---
 
-## ** Done!**
+## **Done!**
 You now have a fully custom **Arch Linux ISO** with **Broadcom BCM4360 WiFi support**! 
 
 # Network Setup in Live Installation
@@ -83,7 +88,7 @@ This guide explains how to set up networking **during the live installation** of
 
 ---
 
-## ** Stop Mirror Service**
+## **Stop Mirror Service**
 To prevent connectivity loops due to missing network access, stop the mirror service:
 ```bash
 systemctl stop reflector.service
@@ -92,7 +97,7 @@ systemctl stop reflector.timer
 
 ---
 
-## ** Start NetworkManager**
+## **Start NetworkManager**
 Enable and start **NetworkManager** to manage WiFi connections:
 ```bash
 systemctl start NetworkManager
@@ -105,7 +110,7 @@ nmcli device wifi list
 
 ---
 
-## ** Connect to WiFi**
+## **Connect to WiFi**
 Find your network's **UUID** from the list and use it to connect:
 ```bash
 nmcli device wifi connect <UUID> password <your_wifi_password>
@@ -122,7 +127,7 @@ nmcli connection show
 
 ---
 
-## ** Restart Mirror Service**
+## **Restart Mirror Service**
 Once connected, restart the mirror service:
 ```bash
 systemctl start reflector.service
@@ -131,7 +136,7 @@ systemctl start reflector.timer
 
 ---
 
-## ** Done!**
+## **Done!**
 You are now connected to WiFi and can proceed with the Arch Linux installation! 
 
 
