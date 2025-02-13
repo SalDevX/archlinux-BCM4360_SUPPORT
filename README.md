@@ -1,6 +1,9 @@
 # Custom Arch Linux ISO with BCM4360 Support
 
-![Alt text](images/bcm4360.png)
+<p align="center">
+  <img src="images/bcm4360.png" alt="Alt text">
+</p>
+
 
 
 This guide provides a **step-by-step** process to create a custom Arch Linux ISO with **Broadcom BCM4360 WiFi support**.
