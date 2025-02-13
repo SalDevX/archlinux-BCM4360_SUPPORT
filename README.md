@@ -62,7 +62,7 @@ Replace `/dev/sdX` with your actual USB device (e.g., `/dev/sdb`). Alternatively
 ---
 
 ## **Boot from USB**
-- Insert the USB drive into your MacBook Pro 2014.
+- Insert the USB drive into your MacBook Pro 2009 / early 2015.
 - Restart and hold down the **Option key** to select the boot device.
 - Choose the custom **Arch Linux ISO** and proceed with installation.
 
@@ -159,14 +159,15 @@ Here's a sleek and fancy version with better readability and a modern touch:
 
 ### 🚀 **Prebuilt Arch Linux ISO with Broadcom Support**  
 
-If you don’t have the setup to build your own custom ISO, you can **download a prebuilt Arch Linux ISO** designed for MacBook Pro models from **2013 to 2015**.  
+If you don’t have the setup to build your own custom ISO, you can **download a prebuilt Arch Linux ISO**. 
+ 
 
 ✅ **Includes:**  
 - `broadcom-wl-dkms` for Wi-Fi support  
 - Essential packages for a smooth live installation  
 
 ⚠️ **Compatibility Notice:**  
-This ISO has been tested on **MacBook Pro (2013–2015) models** with Broadcom Wi-Fi. **Other models may have varying compatibility.**  
+This ISO has been tested on **MacBook Pro (2009–e.2015) models** with Broadcom Wi-Fi. **Other models may have varying compatibility.**  
 
 ---
 
